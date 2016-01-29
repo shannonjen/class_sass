@@ -1,28 +1,18 @@
+
 $default-blue: blue;
 $font-stack: Arial, sans-serif;
+
+@mixin black($opac){
+	background-color: rgba(0,0,0,$opac);
+}
 body {
 	background-color: $default-blue;
 	color: white;
 	font-family: $font-stack;
 }
-
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	li {
-		display: inline-block;
-	}
-	a {
-		display: block;
-		padding: 6px 12px;
-		text-decoration: none;
-		color: white;
-		&:hover {
-			color: red;
-		}
-	}
+h1{
+	@include black(0.6);
 }
+
+@import 'navbar'
 
