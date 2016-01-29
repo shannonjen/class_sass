@@ -1,0 +1,14 @@
+$default-blue: yellow;
+body {
+	background-color: $default-blue;
+}
+
+nav {
+	ul {
+		margin: 0;
+	}
+	li {
+		display: inline;
+	}
+
+}
